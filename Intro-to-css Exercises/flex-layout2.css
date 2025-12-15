@@ -1,0 +1,63 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+font-size: 32px;
+font-weight: 900;
+  height: 72px;
+  background: darkmagenta;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+  margin-top: auto;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+  width: 300px;
+  background: royalblue;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 24px;
+}
+li, a{
+text-decoration: none;
+  list-style: none;
+  color: white;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;      /* 👈 THIS is the key */
+  gap: 32px;
+  padding: 32px;
+  flex: 1;
+}
+
+.card {
+  flex: 1 1 280px;      /* grow | shrink | min width */
+  max-width: 400px;    /* optional, keeps layout neat */
+  background: white;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+
+.content {
+    display: flex;
+    flex: 1;
+}
